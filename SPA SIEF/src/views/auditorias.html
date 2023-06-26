@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tabla-auditoria">
+        <h2 style="color: black; margin-top: 50px;">TABLA DE AUDITORIAS</h2>
+      <div class="tabla-contenedor">
+        <table id="miTabla" class="tabla rwd-table">
+          <thead>
+            <tr>
+              <!-- Agrega aquí los encabezados de las columnas adicionales -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se generarán las filas de la tabla -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="#/inicio" class="hiden">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text"> Graficas estadisticas </span>
+          </a>
+        </li>
+        <li class="has-subnav">
+          <a href="#/informacionEstadistica">
+            <i class="fa fa-globe fa-2x"></i>
+            <span class="nav-text"> Información estadística </span>
+          </a>
+        </li>
+        <li class="has-subnav">
+          <a href="#/auditorias" id="auditorias">
+            <i class="fa fa-comments fa-2x"></i>
+            <span class="nav-text"> Auditorias </span>
+          </a>
+        </li>
+        <li>
+          <a href="#/nuevaInfoEstadistica" id="nuevaInfoEst">
+            <i class="fa fa-book fa-2x"></i>
+            <span class="nav-text"> Nueva informacion estadistica </span>
+          </a>
+        </li>
+        <li class="has-subnav">
+          <a href="#/inicio">
+            <i class="fa fa-info fa-2x"></i>
+            <span class="nav-text"> Información histórica </span>
+          </a>
+          <ul class="submenu">
+            <li>
+              <a
+                href="http://200.119.89.147/sief/cod/informes_estadisticos/Informes_est_2019_01.pdf"
+              >
+                <span class="nav-text"> Informe estadistico 2019-1 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://200.119.89.147/sief/cod/informes_estadisticos/Informes_est_2019_02.pdf"
+              >
+                <span class="nav-text"> Informe estadistico 2019-2 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://200.119.89.147/sief/cod/informes_estadisticos/Informes_est_2020_01.pdf"
+              >
+                <span class="nav-text"> Informe estadistico 2020-1 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://200.119.89.147/sief/cod/informes_estadisticos/Informes_est_2020_02.pdf"
+              >
+                <span class="nav-text"> Informe estadistico 2020-2 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://200.119.89.147/sief/cod/informes_estadisticos/Informes_est_2021_01.pdf"
+              >
+                <span class="nav-text"> Informe estadistico 2021-1 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://200.119.89.147/sief/cod/informes_estadisticos/Informes_est_2021_02.pdf"
+              >
+                <span class="nav-text"> Informe estadistico 2021-2 </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://200.119.89.147/sief/cod/informes_estadisticos/Informes_est_2022_01.pdf"
+              >
+                <span class="nav-text"> Informe estadistico 2022-1 </span>
+              </a>
+            </li>
+            <!-- Agrega más elementos de submenú si es necesario -->
+          </ul>
+        </li>
+        <li>
+          <a href="#/registroUsuarios" id="registroUsuarios">
+            <i class="fa fa-cogs fa-2x"></i>
+            <span class="nav-text">Registrar usuario </span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="logout">
+        <li>
+          <a id="cerrarSesion" href="#">
+            <i class="fa fa-power-off fa-2x"></i>
+            <span class="nav-text"> Cerrar sesión </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <style>
+      .submenu {
+        display: none;
+        position: absolute;
+        background-color: black; /* Cambia el color de fondo del submenú a negro */
+        color: white; /* Cambia el color de las letras del submenú a blanco */
+        font-weight: bold; /* Aplica negrita a las letras del submenú */
+        padding: 10px;
+        left: 100%;
+        top: 0;
+      }
+
+      .has-subnav:hover .submenu {
+        display: block;
+      }
+    </style>
+  </body>
+</html>
